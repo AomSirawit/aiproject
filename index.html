@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Decision Tree Mini Project</h1>
+    <div class="form-container">
+        <label for="outlook">Outlook:</label>
+        <select id="outlook">
+            <option value="sunny">Sunny</option>
+            <option value="overcast">Overcast</option>
+            <option value="rainy">Rainy</option>
+        </select><br>
+
+        <label for="temperature">Temperature:</label>
+        <select id="temperature">
+            <option value="hot">Hot</option>
+            <option value="mild">Mild</option>
+            <option value="cool">Cool</option>
+        </select><br>
+
+        <label for="humidity">Humidity:</label>
+        <select id="humidity">
+            <option value="high">High</option>
+            <option value="normal">Normal</option>
+        </select><br>
+
+        <label for="windy">Windy:</label>
+        <select id="windy">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select><br>
+
+        <button onclick="predict()">Predict</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
